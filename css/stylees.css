@@ -1,0 +1,1000 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic";
+}
+body{
+    background-color: #292929;
+}
+.CONTAINER{
+    width: 1630px;
+    margin: 0 auto;
+}
+/*ШАПКА*/
+.CONT_SHAPKA {
+    background-color: #292929;
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 0 120px;
+    margin-bottom: 20px;
+}
+.LOGO {
+    margin-top: 43px;
+    margin-left: -7px;
+    z-index: 1001;
+}
+.LOGO img {
+    max-width: 120px;
+    height: auto;
+}
+
+.shapka_pravo{
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: end;
+}
+.shapka_pravo a {
+    margin: 0px 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.shapka_pravo a.OFFICE {
+    color: #F60000 !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+}
+/*БЛОК С ФОТО*/
+.GLAV_BLOCK{
+    display: flex;
+    align-items: center;
+    margin-top: 180px;
+    margin-bottom: 80px;
+    margin-left: 20px;
+}
+.glav_text{
+    margin-top: -250px;
+}
+.glav_text p {
+    color: #ffff;
+    font-size: 30px;
+    margin-left: 120px;
+    margin-top: 0px;
+}
+.knopka_zapisatsa {
+    color: #ffff;
+    font-size:24px;
+    background-color: #F60000;
+    border-radius:10px ;
+    width: 300px;
+    height: 80px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-left: 120px;
+    margin-top: 45px;
+}
+/*БЛОК О НАС*/
+.BLOK_O_NAS {
+    display: flex;
+    width: 1680px;
+    max-width: 100%;
+    margin: 110px auto 100px;
+}
+
+.TEXT_O_NAS {
+    margin-left: 60px;
+    margin-top: 250px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.o_nas_photo {
+    margin-right: 20px;
+}
+
+.o_nas_photo img {
+    width: 100%;
+    height: auto;
+}
+
+.bolsh_o_nas {
+    font-size: 64px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.mal_o_nas {
+    color: #fff;
+    width: calc(920px - 115px);
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.red_text {
+    color: #F60000;
+}
+
+/* Стили для блока преимуществ в две колонки */
+.features_grid {
+    display: flex;
+    gap: 60px; /* Расстояние между колонками */
+    margin-top: 30px;
+}
+
+.features_column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Расстояние между пунктами в колонке */
+    flex: 1;
+    margin-left: 60px;
+}
+
+.feature_item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.feature_icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.feature_title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/*БЛОК КАТЕГОРИЙ УСЛУГ*/
+.NAZVANIE_BLOKA{
+    color: #ffff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+/* ОСНОВНЫЕ СТИЛИ ДЛЯ КАРТОЧЕК */
+.KARTOCHKI {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 20px); /* Уменьшил вычитание gap для точного расчета */
+    min-width: 300px;
+    background-color: #393939;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    display: flex; /* Добавил flex */
+    flex-direction: column; /* Колонковая структура */
+    min-height: 550px; /* Фиксированная минимальная высота */
+}
+
+.card_content {
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Растягиваем на всю доступную высоту */
+}
+
+.card_photo {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.card_photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_nazv {
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 15px 0;
+}
+
+.card_description {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    flex-grow: 1; /* Описание занимает доступное пространство */
+}
+
+.card_button_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: auto; /* Кнопка прижимается к низу */
+    padding: 10px 0;
+}
+
+.card_button {
+    background-color: rgb(183, 14, 14);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 255px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_button a {
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 22px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ТЕКСТ ПОД КАРТОЧКАМИ*/
+.TEXT_POD_KARTOCHKAMI {
+    display: flex;
+    justify-content: center;
+    color: #ffff;
+    text-decoration: underline;
+    margin: 80px 0 ;
+}
+/*ОТЗЫВЫ*/
+.BLOK_OTZIVI {
+    width: 100%; 
+    height: 1000px;
+    position: relative;
+    margin-top: 60px; /* Увеличиваем отступ сверху */
+    padding-top: 15px; /* Можно добавить дополнительный отступ сверху */
+}
+.OTZIV {
+    width:calc(33.33% - 20px);
+    padding: 20px;
+    background-color: #ffff;
+    border-radius: 10px;
+    margin: 60px 10px;
+}
+.OTZ_POLOZHENIE {
+    display: flex;
+    justify-content: space-between;
+}
+/* БЛОК ОБРАТНОЙ СВЯЗИ */
+.FORMA_I_TEXT {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 100px;
+    width: 100%;
+    gap: 40px;
+}
+
+.BLOK_FORMA {
+    flex: 1;
+    max-width: 50%;
+}
+
+.FORM_CONTAINER {
+    flex: 1;
+    max-width: 500px;
+    margin-right: 90px;
+}
+
+.TEXI_OKOLO_FORMY,
+.text_pod_bText {
+    color: #ffffff;
+}
+
+.TEXI_OKOLO_FORMY {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text_pod_bText {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.FORMA_OBR_SVYAZI {
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+    margin-bottom: 30px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.FORM_NAME, 
+.FORM_COMMENT,
+.rating-select {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 8px 0;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+    transition: border-bottom-color 0.3s;
+}
+
+.rating-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px;
+}
+
+.rating-select:focus,
+.FORM_NAME:focus,
+.FORM_COMMENT:focus {
+    border-bottom-color: #F60000;
+}
+
+.knopka_otp_otz {
+    width: 216px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #F60000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 0;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.knopka_otp_otz:hover {
+    background-color: #D50000;
+}
+
+.alert {
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.alert-success {
+    background-color: #28a745;
+}
+
+.alert-error {
+    background-color: #dc3545;
+}
+
+/* Звезды рейтинга */
+.otz_otsenka {
+    color: #FFD700;
+    font-size: 24px;
+    margin: 5px 0;
+    letter-spacing: 2px;
+}
+/*БЛОК КОНТАКТЫ*/
+.BLOK_CONTACTS {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.contacts_fon {
+    background-color: #ffff;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.cont_text {
+padding: 25px;
+}
+.knopka_zapisatsa_cont{
+color: #ffff;
+font-size:24px;
+background-color: #F60000;
+border-radius:10px ;
+width: 300px;
+height: 80px;
+display: flex; 
+justify-content: center; 
+align-items: center;
+margin-left: 120px;
+margin-top: 75px;
+margin-right: 40px;
+}
+.cont_text p{
+   margin: 20px;
+}
+/*БЛОК ФУТЕР*/
+.fot_seredina{
+    color: #ffff;
+    display:flex ;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+.foot_text{
+    width: 50%;
+}
+.div_pravo_f{
+    text-align: center;
+    margin-right: 150px ;
+}
+.fot_n{
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.logo_footer{
+    padding-top: 35px;
+}
+.BLOK_FOOTER{
+    background-color: #333333;
+    margin-top: 100px;
+}
+
+/* Добавляем стили для бургер-меню */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 10px;
+}
+
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.burger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+@media (max-width: 396px) {
+    *{
+        margin: 0 auto;
+    }
+    body{
+        overflow-x: hidden;
+       
+    }
+    .CONTAINER {
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    /* Шапка */
+    .CONT_SHAPKA {
+        margin: 0 15px;
+        align-items: center;
+    }
+    .LOGO{
+        margin-left: 20px;
+    }
+    .LOGO img {
+        max-width: 80px;
+    }
+    
+    .burger-menu {
+        display: block;
+        margin-top: 35px;
+        margin-right: 0;
+    }
+    
+    .shapka_pravo {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #292929;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        transition: right 0.5s ease;
+        padding-top: 80px;
+    }
+    
+    .shapka_pravo.active {
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .shapka_pravo a {
+        padding: 15px;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0 !important;
+        display: block;
+    }
+    .nav-item {
+        padding: 15px;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0 !important;
+    }
+    
+    /* Главный блок */
+    .GLAV_BLOCK {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .glav_text {
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .glav_text p {
+        font-size: 26px;
+        margin-left: 40px;
+        padding: 0 15px;
+    }
+    
+    .knopka_zapisatsa {
+        margin-top: 20px;
+        margin-left: 95px;
+        width: 250px;
+        height: 70px;
+        font-size: 20px;
+    }
+    
+    .glav_photo {
+        display: none;
+    }
+    
+    /* Блок о нас */
+     .BLOK_O_NAS {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+    
+    .o_nas_photo {
+        margin-right: 25px;
+        text-align: center;
+        order: 1; /* Фото будет первым */
+        margin: 0 auto;
+    }
+    
+    .o_nas_photo img {
+        max-width: 95%;
+        height: auto;
+        margin-right: 15px;
+    }
+    
+    .TEXT_O_NAS {
+        margin-left: 0;
+        margin-top: 30px;
+        text-align: center;
+        order: 2; /* Текст будет вторым */
+        width: 100%;
+    }
+    
+    .bolsh_o_nas {
+        font-size: 32px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .mal_o_nas {
+        width: 100%;
+        margin-right: 0;
+        font-size: 18px;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    
+    /* Скрываем блок преимуществ на мобильных */
+    .features_grid {
+        display: none;
+    }   
+    
+    /* Блок категорий услуг */
+    .KARTOCHKI {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 380px;
+        min-width: 0; /* Убираем фиксированную минимальную ширину */
+        margin: 15px 0; /* Отступы сверху и снизу */
+    }
+    
+    .card_button {
+        width: 280px;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .TEXT_POD_KARTOCHKAMI{
+        margin: 0 auto;
+    }
+    /* Блок отзывов */
+    .BLOK_OTZIVI {
+        background-color: #292929;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    
+    .OTZ_POLOZHENIE {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .OTZIV {
+        min-width: 280px;
+        margin: 20px 10px;
+        flex: 0 0 auto;
+    }
+    
+    /* Форма обратной связи */
+    .FORMA_I_TEXT {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    
+    .TEXI_OKOLO_FORMY {
+        max-width: 390px;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    .text_pod_bText {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .knopka_otp_otz {
+        height: 45px;
+        font-size: 15px;
+    }
+    .TEXT_POD_KARTOCHKAMI{
+        margin-left: 20px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    /* Блок контактов */
+    .contacts_fon {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+    
+    .cont_text {
+        text-align: center;
+        padding: 0;
+    }
+    
+    .knopka_zapisatsa_cont {
+        margin: 20px auto 0;
+        width: 250px;
+        height: 70px;
+        font-size: 20px;
+    }
+    
+    /* Футер */
+    .BLOK_FOOTER{
+        background-color: #292929 ;
+    }
+    .fot_seredina {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .foot_text {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .div_pravo_f {
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    
+    .div_pravo_f img{
+        margin-top: 25px;
+    }
+    
+    .logo_footer img {
+        max-width: 100px;
+    }
+    .NAZVANIE_BLOKA {
+        font-size: 22px;
+    }
+}
+
+
+@media (min-width: 397px) and (max-width: 768px) {
+    /* Общие стили */
+    body {
+        background-color: #292929;
+    }
+    
+    .CONTAINER {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    /* Шапка */
+    .CONT_SHAPKA {
+        margin: 0 20px 15px;
+        padding: 0 10px;
+    }
+
+    .LOGO {
+        margin-top: 30px;
+    }
+
+    .LOGO img {
+        max-width: 100px;
+    }
+
+    /* Главный блок */
+    .GLAV_BLOCK {
+        flex-direction: column;
+        margin: 100px 0 60px;
+        text-align: center;
+    }
+
+    .glav_text {
+        margin-top: 0;
+    }
+
+    .glav_text p {
+        font-size: 28px;
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
+    .knopka_zapisatsa {
+        margin: 30px auto 0;
+    }
+
+    .glav_photo img {
+        max-width: 80%;
+        margin-top: 40px;
+    }
+
+    /* Блок о нас */
+    .BLOK_O_NAS {
+        flex-direction: column;
+        margin: 80px auto;
+    }
+
+    .o_nas_photo img {
+        max-width: 80%;
+    }
+
+    .TEXT_O_NAS {
+        margin: 40px 0 0;
+        text-align: center;
+    }
+
+    .bolsh_o_nas {
+        font-size: 42px;
+    }
+
+    .mal_o_nas {
+        font-size: 20px;
+        width: 100%;
+        margin: 0 auto 30px;
+    }
+
+    /* Преимущества - 2 в столбце */
+    .features_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .features_column {
+        margin-left: 0;
+        gap: 20px;
+    }
+
+    .feature_item {
+        gap: 15px;
+    }
+
+    /* Карточки услуг - 2 в строке */
+    .KARTOCHKI {
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .card {
+        flex: 0 0 calc(50% - 15px);
+        min-width: 280px;
+        min-height: 480px;
+    }
+
+    .card_photo {
+        height: 200px;
+    }
+
+    .card_nazv {
+        font-size: 20px;
+    }
+
+    .card_description {
+        font-size: 16px;
+    }
+
+    .card_button {
+        height: 45px;
+    }
+
+    /* Отзывы */
+    .BLOK_OTZIVI {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .OTZ_POLOZHENIE {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .OTZIV {
+        width: calc(50% - 20px);
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    /* Форма отзывов - по центру */
+    .FORMA_I_TEXT {
+        flex-direction: column;
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    .BLOK_FORMA {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .TEXI_OKOLO_FORMY {
+        font-size: 32px;
+    }
+
+    .FORM_CONTAINER {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .FORMA_OBR_SVYAZI {
+        padding: 30px;
+    }
+
+    /* Текст под формой по центру */
+    .TEXT_POD_KARTOCHKAMI {
+        text-align: center;
+        margin: 40px auto;
+    }
+
+    /* Контакты - увеличенный текст */
+    .BLOK_CONTACTS {
+        margin: 60px 0;
+    }
+
+    .contacts_fon {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    .cont_text {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .cont_text p {
+        font-size: 22px;
+        margin: 15px 0;
+    }
+
+    .knopka_zapisatsa_cont {
+        margin: 0 auto;
+        font-size: 22px;
+    }
+
+    /* Футер - без фона */
+    .BLOK_FOOTER {
+        background-color: transparent;
+        margin-top: 80px;
+    }
+
+    .fot_seredina {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foot_text {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .div_pravo_f {
+        margin-right: 0;
+        font-size: 18px;
+    }
+
+    .fot_imgs {
+        margin-top: 20px;
+    }
+}

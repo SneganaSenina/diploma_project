@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", Arial, sans-serif;
+}
+body {
+    background-color: #292929;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ШАПКА */
+.header-container {
+    background-color: #292929;
+    width: 100%;
+    position: relative;
+}
+#hr-line {
+    width: 85%;
+    margin: 0 auto;
+}
+.CONT_SHAPKA {
+    background-color: #292929;
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 0 120px;
+    margin-bottom: 20px;
+}
+.LOGO {
+    margin-top: 43px;
+    margin-left: 20px;
+    z-index: 1001;
+}
+.LOGO img {
+    max-width: 120px;
+    height: auto;
+}
+
+.shapka_pravo {
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: end;
+    transition: transform 0.5s ease;
+}
+.shapka_pravo a {
+    margin: 0 30px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.shapka_pravo a.OFFICE {
+    color: #F60000 !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+}
+
+/* Бургер меню */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 10px;
+    margin-top: 35px;
+}
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+.burger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.burger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.burger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Основное содержимое */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Секция авторизации */
+.auth-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #F60000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.auth-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+.form-row {
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+.form-row label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    padding-left: 15px;
+}
+.form-row input {
+    width: calc(100% - 30px);
+    margin: 0 15px;
+    padding: 12px;
+    background-color: #333;
+    border: none;
+    border-bottom: 2px solid rgb(233, 233, 233);
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+.form-row input:focus {
+    outline: none;
+    border-bottom: 2px solid white;
+}
+.submit-btn {
+    background-color: #F60000;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 20px;
+    font-weight: bold;
+    transition: all 0.3s;
+    width: calc(100% - 30px);
+}
+.submit-btn:hover {
+    background-color: #d40000;
+    transform: translateY(-2px);
+}
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 15px;
+}
+.register-link a {
+    color: #F60000;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Футер */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: -30px;
+}
+
+/* Медиазапросы */
+@media (max-width: 1024px) {
+    /* Планшетная версия */
+    .CONT_SHAPKA {
+        margin: 0 60px;
+        padding: 15px;
+    }
+    .LOGO {
+        margin-left: 10px;
+    }
+    .LOGO img {
+        max-width: 100px;
+    }
+    .shapka_pravo a {
+        margin: 0 15px;
+        font-size: 18px;
+    }
+    .auth-section {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Планшетная версия (меньший размер) */
+    .CONT_SHAPKA {
+        margin: 0 30px;
+        padding: 10px;
+    }
+    .shapka_pravo a {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+    .auth-section {
+        padding: 20px;
+    }
+    .form-row input {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .submit-btn {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Мобильная версия */
+    .burger-menu {
+        display: block;
+    }
+    .shapka_pravo {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #292929;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        transition: right 0.5s ease;
+        padding-top: 80px;
+    }
+    .shapka_pravo.active {
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .shapka_pravo a {
+        padding: 15px;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0 !important;
+        display: block;
+    }
+    .nav-item {
+        padding: 15px;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0 !important;
+    }
+    .CONT_SHAPKA {
+        margin: 0 15px;
+        align-items: center;
+    }
+    .LOGO {
+        margin-top: 20px;
+    }
+    .LOGO img {
+        max-width: 80px;
+    }
+    .auth-section {
+        margin: 20px auto;
+        padding: 15px;
+    }
+    .auth-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .form-row label {
+        font-size: 16px;
+    }
+    .form-row input {
+        font-size: 14px;
+    }
+    .submit-btn {
+        font-size: 16px;
+    }
+    .footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 396px) {
+    /* Маленькие мобильные устройства */
+    .shapka_pravo {
+        width: 80%;
+    }
+    .auth-section {
+        padding: 12px;
+    }
+    .auth-title {
+        font-size: 18px;
+    }
+    .form-row label {
+        font-size: 15px;
+    }
+    .form-row input {
+        font-size: 13px;
+        padding: 8px;
+    }
+    .submit-btn {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+}

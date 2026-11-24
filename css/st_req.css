@@ -1,0 +1,469 @@
+ /*ШАПКА*/
+ .CONT_SHAPKA {
+    background-color: #292929;
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 0 120px;
+    margin-bottom: 20px;
+}
+.LOGO{
+   margin-top: 43px; 
+   margin-left: 20px;
+}
+
+.shapka_pravo{
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: end;
+}
+.shapka_pravo a {
+    margin: 0px 30px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.shapka_pravo a.OFFICE {
+    color: #F60000 !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+}
+
+/* Бургер меню */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 10px;
+}
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+.burger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.burger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.burger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Мобильная версия */
+@media (max-width: 396px) {
+    .CONT_SHAPKA {
+        margin: 0 15px;
+        align-items: center;
+    }
+    .LOGO img {
+        max-width: 80px;
+    }
+    .burger-menu {
+        display: block;
+        margin-top: 35px;
+    }
+    .shapka_pravo {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #292929;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        transition: right 0.5s ease;
+        padding-top: 80px;
+    }
+    .shapka_pravo.active {
+        right: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .shapka_pravo a {
+        padding: 15px;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0 !important;
+        display: block;
+    }
+}
+
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", Arial, sans-serif;
+}
+body {
+    background-color: #292929;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.CONTAINER {
+    width: 100%;
+}
+#hr-line {
+    width: 85%;
+    margin: 0 auto;
+    border: 0;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+/* Основное содержимое */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Форма записи */
+.booking-container {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px auto;
+    border: 2px solid #F60000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.booking-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+.form-section {
+    margin-bottom: 25px;
+}
+.section-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #F60000;
+}
+.category-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.category-btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.category-btn:hover, .category-btn.active {
+    background-color: #F60000;
+}
+.change-category {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.change-category:hover {
+    text-decoration: underline;
+}
+.service-select {
+    width: 100%;
+    padding: 12px;
+    background-color: #444;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.datetime-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.date-picker {
+    flex: 1;
+    min-width: 250px;
+    position: relative;
+}
+.time-slots {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Стили для поля ввода даты */
+.date-input-container {
+    position: relative;
+}
+.date-input {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    background-color: #444;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.calendar-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Стили для всплывающего календаря */
+.calendar-popup {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.nav-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+.current-month {
+    font-weight: bold;
+}
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+.calendar-header {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 14px;
+}
+.calendar-day {
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s;
+    font-size: 14px;
+}
+.calendar-day:hover {
+    background-color: #555;
+}
+.calendar-day.disabled {
+    color: #777;
+    cursor: not-allowed;
+    background-color: transparent;
+}
+.calendar-day.selected {
+    background-color: #F60000;
+    color: white;
+}
+
+/* Стили для временных слотов */
+.time-slot-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 5px;
+}
+.time-slot {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 14px;
+}
+.time-slot:hover, .time-slot.selected {
+    background-color: #F60000;
+}
+.time-slot.disabled {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #333;
+}
+
+.comment-area {
+    width: 100%;
+    padding: 12px;
+    background-color: #444;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    min-height: 100px;
+    resize: vertical;
+}
+.submit-btn {
+    background-color: #F60000;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 0;
+    font-weight: bold;
+    transition: all 0.3s;
+    width: 100%;
+    max-width: 300px;
+}
+.submit-btn:hover {
+    background-color: #d40000;
+    transform: translateY(-2px);
+}
+
+/* Футер */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 1024px) {
+    .booking-container {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .booking-container {
+        padding: 20px;
+    }
+    .time-slot-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+    .booking-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .section-title {
+        font-size: 16px;
+    }
+    .time-slot-container {
+        grid-template-columns: 1fr;
+    }
+    .footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 396px) {
+    .booking-container {
+        padding: 12px;
+    }
+    .booking-title {
+        font-size: 18px;
+    }
+    .section-title {
+        font-size: 15px;
+    }
+}
+   /* Стили для календаря и временных слотов */
+   .calendar-popup {
+    display: none;
+    position: absolute;
+    background: #444;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+.calendar-header {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+.calendar-day {
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.calendar-day:hover {
+    background: #555;
+}
+.calendar-day.selected {
+    background: #F60000;
+    color: white;
+}
+.calendar-day.disabled {
+    color: #777;
+    cursor: not-allowed;
+}
+.time-slot-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.time-slot {
+    background: #444;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.time-slot:hover, .time-slot.selected {
+    background: #F60000;
+}
+.time-slot.disabled {
+    color: #777;
+    cursor: not-allowed;
+    background: #333;
+}

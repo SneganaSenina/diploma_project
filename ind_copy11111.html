@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylees.css">
+    <title>ГЛАВНАЯ</title>
+</head>
+<body>
+    <!--ШАПКА-->
+    <div class="CONT_SHAPKA" id="shapka">
+        <div class="LOGO"><a href="ind.php"><img src="imgs/LOGO.png" alt="Логотип"></a></div>
+        <button type="button" class="burger-menu" id="burgerMenu" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="shapka_pravo nav-menu" id="navMenu">
+            <a href="avtorization.php" class="RECORD nav-item">Запись</a>
+            <a href="categorii.php" class="SERVICES nav-item">Услуги</a>
+            <a href="#rewiews" class="OTZIVI nav-item">Отзывы</a>
+            <a href="#contacts" class="CONTACTS nav-item">Контакты</a>
+            <a href="avtorization.php" class="OFFICE nav-item nav-office">Личный кабинет</a>
+        </div>
+    </div>
+    <div class="CONTAINER">
+        <hr class="hr-line">
+    </div>
+    <div class="GLAV_BLOCK">
+        <div class="glav_text">
+            <p><b>Профессиональный ремонт и обслуживание вашего автомобиля с гарантией качества и безопасности!</b></p>
+            <button type="button" class="knopka_zapisatsa" onclick="location.href='avtorization.php'">
+                Записаться
+            </button>
+        </div>
+        <div class="glav_photo"><img src="imgs/glav_photo.png" alt="Главное фото"></div>
+    </div>
+    <div class="CONTAINER">
+        <hr class="hr-line">
+    </div>
+    <!--БЛОК О НАС-->
+    <div class="CONTAINER">
+        <div class="BLOK_O_NAS">
+            <!-- Левая часть с фото -->
+            <div class="o_nas_photo">
+                <img src="imgs/photo_mastera.png" alt="Наш мастер">
+            </div>
+            
+            <!-- Правая часть с текстом и преимуществами -->
+            <div class="right_content">
+                <!-- Блок с заголовком и описанием -->
+                <div class="TEXT_O_NAS">
+                    <h1 class="bolsh_o_nas">Почему именно мы?</h1>
+                    <p class="mal_o_nas">
+                        <span class="red_text">Наша цель</span> — обеспечить высококачественный сервис, который не ударит по вашему бюджету, и сделать заботу о вашем автомобиле доступной для каждого. Мы стремимся к тому, чтобы качественный ремонт был не только эффективным, но и финансово оправданным.
+                    </p>
+                </div>
+                
+                <!-- Блок с преимуществами в две колонки -->
+                <div class="features_grid">
+                    <div class="features_column">
+                        <div class="feature_item">
+                            <div class="feature_icon"><img src="imgs/opasity_ysl.png" alt="Прозрачность"></div>
+                            <div class="feature_title">Прозрачность услуг</div>
+                        </div>
+                        <div class="feature_item">
+                            <div class="feature_icon"><img src="imgs/oborydovanie.png" alt="Оборудование"></div>
+                            <div class="feature_title">Оборудование</div>
+                        </div>
+                    </div>
+                    <div class="features_column">
+                        <div class="feature_item">
+                            <div class="feature_icon"><img src="imgs/proffessionalizm.png" alt="Профессионализм"></div>
+                            <div class="feature_title">Профессионализм</div>
+                        </div>
+                        <div class="feature_item">
+                            <div class="feature_icon"><img src="imgs/uyt.png" alt="Уют"></div>
+                            <div class="feature_title">Уютная обстановка</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--БЛОК КАТЕГОРИЙ УСЛУГ-->
+    <div class="CONTAINER">
+        <div class="NAZVANIE_BLOKA"><h2>Наши категории услуг</h2></div>
+        <hr class="hr-line"> 
+    </div>
+    <div class="CONTAINER">
+        <div class="KARTOCHKI">
+            <div class="card">
+                <div class="card_photo">
+                    <img src="imgs/default.png" alt="Техническое обслуживание">
+                </div>
+                <div class="card_content">
+                    <div class="card_nazv">Техническое обслуживание</div>
+                    <div class="card_description">Комплекс работ по поддержанию работоспособности автомобиля</div>
+                    <div class="card_button_wrapper">
+                        <div class="card_button">
+                            <a href="avtorization.php" class="auth-required">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_photo">
+                    <img src="imgs/default.png" alt="Диагностика">
+                </div>
+                <div class="card_content">
+                    <div class="card_nazv">Диагностика</div>
+                    <div class="card_description">Компьютерная диагностика всех систем автомобиля</div>
+                    <div class="card_button_wrapper">
+                        <div class="card_button">
+                            <a href="avtorization.php" class="auth-required">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_photo">
+                    <img src="imgs/default.png" alt="Ремонт двигателя">
+                </div>
+                <div class="card_content">
+                    <div class="card_nazv">Ремонт двигателя</div>
+                    <div class="card_description">Капитальный и текущий ремонт двигателя любой сложности</div>
+                    <div class="card_button_wrapper">
+                        <div class="card_button">
+                            <a href="avtorization.php" class="auth-required">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--ТЕКСТ ПОД КАРТОЧКАМИ-->
+    <div class="BLOK_OTZIVI">
+        <div class="CONTAINER">
+            <div class="NAZVANIE_BLOKA" id="rewiews"><h2>Наши отзывы</h2></div>
+            <hr class="hr-line"> 
+        </div>
+        <div class="CONTAINER">
+            <div class="OTZ_POLOZHENIE">
+                <div class="OTZIV">
+                    <div class="otz_name">Иван</div>
+                    <div class="otz_otsenka">★★★★★</div>
+                    <div class="otz_komment">Отличный сервис, быстро и качественно!</div>
+                </div>
+                <div class="OTZIV">
+                    <div class="otz_name">Мария</div>
+                    <div class="otz_otsenka">★★★★☆</div>
+                    <div class="otz_komment">Хорошее обслуживание, приятные цены</div>
+                </div>
+                <div class="OTZIV">
+                    <div class="otz_name">Алексей</div>
+                    <div class="otz_otsenka">★★★★★</div>
+                    <div class="otz_komment">Лучший автосервис в городе, рекомендую!</div>
+                </div>
+            </div>
+        </div>
+        
+        <!--БЛОК ОБРАТНОЙ СВЯЗИ-->
+        <div class="CONTAINER">
+            <div class="FORMA_I_TEXT">
+                <div class="BLOK_FORMA">
+                    <div class="TEXI_OKOLO_FORMY">
+                        Вы можете оставить свой отзыв о нашем автосервисе:
+                    </div>
+                    <div class="text_pod_bText">Ваши отзывы - очень важны для нас!</div>
+                </div>
+                
+                <div class="FORM_CONTAINER">
+                    <form class="FORMA_OBR_SVYAZI" method="POST" action="submit_review.php">
+                        <div class="form-field">
+                            <label for="name">Имя:</label>
+                            <input class="FORM_NAME" type="text" name="name" id="name" required>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="rating">Оценка:</label>
+                            <select class="rating-select" name="rating" id="rating" required>
+                                <option value="">Выберите оценку</option>
+                                <option value="1">1 ★</option>
+                                <option value="2">2 ★</option>
+                                <option value="3">3 ★</option>
+                                <option value="4">4 ★</option>
+                                <option value="5">5 ★</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="comment">Комментарий:</label>
+                            <textarea class="FORM_COMMENT" name="comment" id="comment" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="knopka_otp_otz">Отправить отзыв</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="TEXT_POD_KARTOCHKAMI">Если у вас есть какие-либо пожелания или предложения, не стесняйтесь делиться ими в отзывах. Ваше мнение важно для нас!</div>
+    </div>
+    <!--БЛОК КОНТАКТЫ-->
+    <div class="BLOK_CONTACTS">
+        <div class="CONTAINER">
+            <div class="NAZVANIE_BLOKA" id="contacts"><h2>Контакты</h2></div>
+            <hr class="hr-line">
+        </div>
+        <div class="CONTAINER">
+            <div class="contacts_fon">
+                <div class="cont_text">
+                    <p>Автосервис в Дзержинске</p>
+                    <p>Красноармейская ул., 17</p>
+                    <p>Работаем каждый день. 8:00 - 20:00</p>
+                    <p>+7 930 714 <span class="red_text">36 34</span></p>
+                </div>
+                <button type="button" class="knopka_zapisatsa_cont">Записаться</button>
+            </div>
+        </div>
+    </div>
+    <!--БЛОК ФУТЕР-->
+    <div class="BLOK_FOOTER">
+        <div class="CONTAINER">
+            <div class="logo_footer">
+                <a href="#shapka"><img src="imgs/LOGO.png" alt="Логотип"></a>
+            </div>
+            <div class="fot_seredina">
+                <p class="foot_text">Автосервис SDD — это место, где ваши автомобильные желания воплощаются в жизнь! Мы используем современное оборудование и только проверенные материалы, контролируя качество на каждом этапе обслуживания. Приходите к нам и наслаждайтесь отличным уровнем сервиса и заботой о вашем автомобиле!</p>
+                <div class="div_pravo_f">
+                    <p>Работаем каждый день. 8:00 - 20:00</p>
+                    <p>Красноармейская ул., 17</p>
+                    <img src="imgs/foot.png" alt="Футер изображение">
+                </div>
+            </div>
+            <div class="fot_n">
+                <p> © 2025 Cars Services. Все права защищены.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
